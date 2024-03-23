@@ -1,0 +1,60 @@
+.header{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden; /* Prevents overflow of lines */
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.line-text {
+    position: relative;
+    background-color: #FFF; /* Matches the background; adjust as needed */
+    padding: 0 10px; /* Ensures space between text and lines */
+}
+
+.line-text::before,
+.line-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9999px; /* Ensure it extends far enough */
+    height: 2px; /* Line thickness */
+    background-color: pink; 
+}
+
+.line-text::before {
+    right: 100%;
+}
+
+.line-text::after {
+    left: 100%;
+}
+
+.about{
+    text-align: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #EDE8D5;
+}
+
+.boxes{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+.smallbox{
+    text-align: center;
+}
+
