@@ -2,6 +2,7 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 50px;
+    font-family:'Tahoma', sans-serif;
 }
 
 .line-container {
@@ -17,7 +18,7 @@
 
 .line-text {
     position: relative;
-    background-color: #FFF; /* Matches the background; adjust as needed */
+    background-color: #FFF; 
     padding: 0 10px; /* Ensures space between text and lines */
 }
 
@@ -42,10 +43,44 @@
 .about{
     text-align: center;
     justify-content: center;
-    margin-left: 80px;
-    margin-right: 80px;
-    background-color: #EDE8D5;
 }
+
+.about-container{
+    display: flex;
+    background-color: #EDE8D5;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text, .about-pic {
+    flex: 1; /* This tells each item to take up equal space */
+    display: flex;
+    justify-content: center; /* Center content inside these containers */
+    align-items: center; /* Vertically center content inside these containers */
+}
+
+.about-text {
+    padding-right: 100px; /* Optional: Adds some spacing between text and picture */
+    font-size: 25px;
+    font-family:'Tahoma', sans-serif;
+    margin-left: 200px;
+}
+
+.about-pic img {
+    max-width: 100%; /* Ensures the image does not overflow its container */
+    height: auto; /* Keeps the image aspect ratio */
+}
+
+.about-pic {
+    max-width: 250px;
+    flex: none;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 
 .boxes{
     display: flex;
