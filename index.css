@@ -3,7 +3,10 @@
     justify-content: center;
     margin-bottom: 50px;
     font-family:'Tahoma', sans-serif;
+    background-color:  #EDE8D5;
 }
+
+
 
 .line-container {
     display: flex;
@@ -13,7 +16,9 @@
     white-space: nowrap;
     overflow: hidden; /* Prevents overflow of lines */
     padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .line-text {
@@ -45,20 +50,22 @@
     justify-content: center;
 }
 
+/* #EDE8D5;*/
 .about-container{
     display: flex;
-    background-color: #EDE8D5;
+    background-color: #ffeeee;
     width: 100%;
     height: 400px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-text, .about-pic {
-    flex: 1; /* This tells each item to take up equal space */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Center content inside these containers */
-    align-items: center; /* Vertically center content inside these containers */
+    justify-content: center; 
+    align-items: center;
 }
 
 .about-text {
@@ -70,7 +77,7 @@
 
 .about-pic img {
     max-width: 100%; /* Ensures the image does not overflow its container */
-    height: auto; /* Keeps the image aspect ratio */
+    height: auto;
 }
 
 .about-pic {
@@ -79,17 +86,67 @@
     justify-content: center;
     margin-left: 200px;
     margin-right: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.picture-box img {
+    max-width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
 
 .boxes{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
+    
     
 }
 
 .smallbox{
     text-align: center;
+    font-family:'Tahoma', sans-serif;
+    font-size: 20px;
+    transition: transform 250ms;
+    justify-content: center;
 }
 
+.smallbox:hover{
+    transform: translateY(-10px);
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    color: darkgray;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    flex-grow: 1;
+    width: 100%
+}
+
+.coding-text, .picture-box {
+    flex: 1; 
+    width: 25%; 
+  }
+  
+  /* Optional: If you want to ensure that the .coding-text and .picture-box are centered within their 25% width, you can add some additional styling */
+  .coding-text, .picture-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* For text alignment within .coding-text */
+  }
+
+ .running-container {
+    display: flex;
+    margin-left: 300px;
+    margin-right: 100px;
+ }
